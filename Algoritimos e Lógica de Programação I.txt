@@ -1,0 +1,42 @@
+variavies
+  inteiro A <- 0
+  inteiro C <- 0
+  inteiro P <- 0
+
+inicio
+  enquanto nao (A = 1 ou A = 2) faz
+    escrever "Pedro! Jogue 2 ou 1: "
+    ler A
+  fimenquanto
+  enquanto nao (C = 1 ou C = 2) faz
+    escrever "Carlos! Jogue 2 ou 1: "
+    ler C
+  fimenquanto
+  enquanto nao (P = 1 ou P = 2) faz
+    escrever "Pietro! Jogue 2 ou 1: "
+    ler P
+  fimenquanto
+
+  escrever("Dois ou um!")
+
+  se(A = 1 ou A = 2 e C = 1 ou C = 2 e P = 1 ou P = 2) entao
+    se(A = C e P<> A) entao
+      escrever("P")
+      escrever("Pietro ganhou!")
+    senao
+      se(A = P e C<> A) entao
+        escrever("C")
+        escrever("Carlos ganhou")
+      senao
+        se(C = P e A<> C) entao
+          escrever("A")
+          escrever("André ganhou!")
+        senao
+          (A = C e C = P)
+            escrever("X")
+            escrever("Empatou!")
+        fim se
+      fim se
+    fim se
+  fim se
+fim
